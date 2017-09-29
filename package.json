@@ -19,7 +19,9 @@
       "ts",
       "tsx"
     ],
-    "globals": {}
+    "globals": {
+      "MIXPANEL_API_KEY": "1"
+    }
   },
   "babel": {
     "presets": [
