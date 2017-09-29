@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "testMatch": [
+      "<rootDir>/src/**/*.test.(js|jsx|ts|tsx)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "globals": {}
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "@types/jest": "^21.1.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "immutable": "^3.8.1",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.0.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  }
+}
